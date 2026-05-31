@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output (web/)
+dist
+build/
+.next/
+out/
+
+# Generated static site copied to repo root for the web server (Forge web dir = /public)
+/public/
+
+# Nuxt
+.nuxt/
+.output/
+.data/
+web/.nuxt/
+web/.output/
+web/app/data/hackathons.json
+
+# Marketing assets (kept local, not committed)
+marketing/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.log

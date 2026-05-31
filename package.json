@@ -1,0 +1,10 @@
+{
+  "name": "moroccan-hackathons",
+  "private": true,
+  "description": "Build entry point. The Nuxt app lives in web/; this delegates install + build so hosts that run `npm ci && npm run build` at the repo root work.",
+  "scripts": {
+    "build": "cd web && npm ci && npm run generate && cd .. && rm -rf public && cp -R web/.output/public public",
+    "generate": "npm run build",
+    "dev": "cd web && npm run dev"
+  }
+}

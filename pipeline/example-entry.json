@@ -1,0 +1,25 @@
+{
+  "_comment": "Illustrative example ONLY. Do not copy into data/hackathons.json; this is not a real event.",
+  "id": "2026-example-city-ai-hackathon",
+  "name": "Example AI Hackathon",
+  "description": "48-hour build sprint focused on AI for public services. Teams of up to 4.",
+  "start_date": "2026-09-12",
+  "end_date": "2026-09-14",
+  "dates_confirmed": true,
+  "city": "Rabat",
+  "venue": "Technopark Rabat",
+  "format": "in-person",
+  "organizer": "Example Tech Community",
+  "themes": ["AI", "GovTech"],
+  "registration_url": "https://example.org/register",
+  "registration_deadline": "2026-09-05",
+  "cost": "Free",
+  "sources": [
+    { "url": "https://example.org/hackathon", "type": "official", "retrieved": "2026-05-31" },
+    { "url": "https://devpost.com/example-ai-hackathon", "type": "devpost", "retrieved": "2026-05-31" }
+  ],
+  "status": "upcoming",
+  "submitted_by": null,
+  "last_verified": "2026-05-31",
+  "added": "2026-05-31"
+}

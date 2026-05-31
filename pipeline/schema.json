@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hackathons Morocco dataset",
+  "type": "object",
+  "required": ["generated_at", "count", "hackathons"],
+  "properties": {
+    "generated_at": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date of the last verified run (YYYY-MM-DD). null before first run."
+    },
+    "count": { "type": "integer", "minimum": 0 },
+    "hackathons": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/hackathon" }
+    }
+  },
+  "definitions": {
+    "hackathon": {
+      "type": "object",
+      "required": [
+        "id", "name", "city", "format", "start_date",
+        "status", "sources", "last_verified", "added"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Stable slug, e.g. 2026-rabat-ai-hackathon. Never reuse or recycle."
+        },
+        "name": { "type": "string", "minLength": 2 },
+        "description": { "type": "string" },
+        "start_date": { "type": "string", "format": "date" },
+        "end_date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "null if single-day or unknown."
+        },
+        "dates_confirmed": {
+          "type": "boolean",
+          "description": "false if dates are approximate / not confirmed against a source."
+        },
+        "city": {
+          "type": "string",
+          "description": "Casablanca, Rabat, Marrakech, ... or 'Multiple' for multi-city."
+        },
+        "venue": { "type": ["string", "null"] },
+        "format": {
+          "type": "string",
+          "enum": ["in-person", "hybrid", "online"]
+        },
+        "organizer": { "type": ["string", "null"] },
+        "themes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "e.g. ['AI', 'FinTech', 'HealthTech']"
+        },
+        "registration_url": { "type": ["string", "null"], "format": "uri" },
+        "registration_deadline": { "type": ["string", "null"], "format": "date" },
+        "cost": {
+          "type": ["string", "null"],
+          "description": "'Free', '200 MAD', etc. null if unknown."
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Provenance AND dedup record. Every entry needs >=1 working URL.",
+          "items": {
+            "type": "object",
+            "required": ["url", "type", "retrieved"],
+            "additionalProperties": false,
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "official", "devpost", "mlh", "eventbrite", "meetup",
+                  "university", "news", "instagram", "facebook", "linkedin",
+                  "submission", "other"
+                ]
+              },
+              "retrieved": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["upcoming", "ongoing"]
+        },
+        "submitted_by": {
+          "type": ["string", "null"],
+          "description": "First name / handle of submitter, if crowdsourced. Optional."
+        },
+        "last_verified": {
+          "type": "string",
+          "format": "date",
+          "description": "Date this entry was last checked against a live source."
+        },
+        "added": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

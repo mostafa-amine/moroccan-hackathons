@@ -1,0 +1,61 @@
+{
+  "$schema": "../pipeline/schema.json",
+  "generated_at": "2026-05-31",
+  "count": 2,
+  "hackathons": [
+    {
+      "id": "2026-casablanca-sport-tech-football-augmente",
+      "name": "Hackathon Sport Tech 2026 - Football Augmenté",
+      "description": "First edition of a sports-tech hackathon on the theme \"Football Augmenté\": building a digital ecosystem that turns passive supporters into active users connected to the stadium, the city and real-time data. Open to developers, students, startups, engineers, designers and project leaders.",
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-07",
+      "dates_confirmed": true,
+      "city": "Casablanca",
+      "venue": "Technopark Casablanca & La Startup Station",
+      "format": "in-person",
+      "organizer": "WeCasablanca & Hack & Pitch",
+      "themes": ["SportTech", "AI", "Football"],
+      "registration_url": null,
+      "registration_deadline": null,
+      "cost": null,
+      "sources": [
+        {
+          "url": "https://premiumtravelnews.com/2026/05/23/hackathon-sport-tech-2026-casablanca/",
+          "type": "news",
+          "retrieved": "2026-05-31"
+        }
+      ],
+      "status": "upcoming",
+      "submitted_by": null,
+      "last_verified": "2026-05-31",
+      "added": "2026-05-31"
+    },
+    {
+      "id": "2026-meknes-agrinova-agroalimentaire-digital",
+      "name": "Hackathon Agrinova 2026 - Innover pour la Coupe du Monde 2030 : l'agroalimentaire à l'ère du digital",
+      "description": "Hackathon focused on Smart Farming and Smart Food, seeking sustainable digital solutions to improve the production and transformation of agri-food products, in the run-up to the 2030 World Cup.",
+      "start_date": "2026-07-10",
+      "end_date": null,
+      "dates_confirmed": true,
+      "city": "Meknès",
+      "venue": "Qualipole Alimentation de Meknès (Agropolis)",
+      "format": "in-person",
+      "organizer": "Agrinova & Pôle Digital de l'Agriculture",
+      "themes": ["AgriTech", "FoodTech", "AgriFood"],
+      "registration_url": null,
+      "registration_deadline": null,
+      "cost": null,
+      "sources": [
+        {
+          "url": "https://www.agrinova.ma/evenements-venir-details/Hackathon_2026_:_%22Innover_pour_la_Coupe_du_Monde_2030_:_l%E2%80%99agroalimentaire_%C3%A0_l%E2%80%99%C3%A8re_du_digital",
+          "type": "official",
+          "retrieved": "2026-05-31"
+        }
+      ],
+      "status": "upcoming",
+      "submitted_by": null,
+      "last_verified": "2026-05-31",
+      "added": "2026-05-31"
+    }
+  ]
+}
