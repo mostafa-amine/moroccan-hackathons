@@ -1,4 +1,4 @@
 {
-  "_comment": "Unverified submissions staging area. Paste/export form responses here. The weekly run reads this, verifies each item, then either merges it into hackathons.json or records a rejection reason. Clear merged/rejected items after each run.",
+  "_comment": "Unverified submissions staging area. Paste/export form responses here. The daily run reads this, verifies each item, then either merges it into hackathons.json or records a rejection reason. Clear merged/rejected items after each run.",
   "pending": []
 }

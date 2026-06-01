@@ -7,10 +7,10 @@ const siteUrl = 'https://moroccan-hackathons.on-forge.com'
 
 const title = 'Moroccan Hackathons: every hackathon in Morocco'
 const description =
-  'Every upcoming hackathon in Morocco, gathered from across the web, verified against a real source, and updated weekly.'
+  'Every upcoming hackathon in Morocco, gathered from across the web and updated daily.'
 const ogImage = `${siteUrl}/og.jpg`
 const ogImageAlt =
-  'Moroccan Hackathons: every hackathon in Morocco, in one place. Verified against a real source, updated weekly.'
+  'Moroccan Hackathons: every hackathon in Morocco, in one place. Updated daily.'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',

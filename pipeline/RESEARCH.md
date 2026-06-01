@@ -1,8 +1,8 @@
-# Weekly Research Run Playbook
+# Daily Research Run Playbook
 
-> **How to run:** Open Claude Code in this repo and say: *"Run the weekly research from
+> **How to run:** Open Claude Code in this repo and say: *"Run the daily research from
 > `pipeline/RESEARCH.md`."* Claude executes the steps below and updates
-> `data/hackathons.json`. Aim for roughly once a week.
+> `data/hackathons.json`. Aim for roughly once a day.
 
 The job: keep `data/hackathons.json` an accurate, deduplicated, verified list of
 **upcoming hackathons in Morocco**. Two inputs (the pending submissions queue plus a fresh

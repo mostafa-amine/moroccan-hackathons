@@ -194,20 +194,6 @@ ul {
   padding: 96px 28px 80px;
   text-align: center;
 }
-.hero__eyebrow {
-  display: inline-block;
-  font-family: var(--mono);
-  font-size: 0.74rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--clay-deep);
-  background: var(--clay-tint);
-  padding: 7px 15px;
-  border-radius: 999px;
-  margin-bottom: 26px;
-  animation: rise 0.7s var(--ease) backwards;
-}
 .hero__title {
   font-family: var(--serif);
   font-optical-sizing: auto;

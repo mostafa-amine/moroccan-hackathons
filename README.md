@@ -12,7 +12,7 @@ against a real source.
 ```
                  ┌─────────────────────┐
    Web sweep ───▶│                     │
-  (weekly run)   │  Verification gate  │───▶  data/hackathons.json ───▶  website
+  (daily run)    │  Verification gate  │───▶  data/hackathons.json ───▶  website
                  │  • real source URL? │                                 (static)
  Submissions ───▶│  • in Morocco?      │
  (hosted form)   │  • upcoming?        │
@@ -20,7 +20,7 @@ against a real source.
                  └─────────────────────┘
 ```
 
-Two inputs, one gate. See [`pipeline/RESEARCH.md`](pipeline/RESEARCH.md) for the weekly
+Two inputs, one gate. See [`pipeline/RESEARCH.md`](pipeline/RESEARCH.md) for the daily
 run playbook and [`pipeline/SUBMISSIONS.md`](pipeline/SUBMISSIONS.md) for how submissions
 flow in.
 
@@ -40,7 +40,7 @@ hackathons-morocco/
 │   ├── hackathons.json          # the source of truth (what the site renders)
 │   └── submissions-pending.json # staging queue: unverified submissions
 ├── pipeline/
-│   ├── RESEARCH.md              # the weekly-run playbook Claude follows
+│   ├── RESEARCH.md              # the daily-run playbook Claude follows
 │   ├── SUBMISSIONS.md           # hosted-form → queue → merge lifecycle
 │   ├── schema.json              # JSON Schema for a hackathon entry
 │   └── example-entry.json       # one fully-filled example entry

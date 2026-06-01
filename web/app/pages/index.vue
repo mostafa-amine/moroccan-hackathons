@@ -9,14 +9,13 @@ const count = sorted.length
 <template>
   <section class="hero">
     <div class="container hero__inner">
-      <span class="hero__eyebrow">🇲🇦 Morocco · updated weekly</span>
       <h1 class="hero__title">
         Every hackathon in Morocco,<br />
         <em class="hero__accent">in one place.</em>
       </h1>
       <p class="hero__sub">
-        Scattered across Instagram, LinkedIn, and a dozen campus pages, gathered here, verified
-        against a real source, and updated weekly.
+        Scattered across Instagram, LinkedIn, and a dozen campus pages, gathered here and
+        updated daily.
       </p>
       <div class="hero__stats">
         <span class="stat">

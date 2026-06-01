@@ -2,13 +2,13 @@
 
 People who spot a hackathon (often on Instagram/LinkedIn) submit it through a hosted form.
 Submissions are **leads, not published facts**. They sit in a pending queue until the
-weekly run verifies them. This is also the spam filter: nothing reaches the live site
+daily run verifies them. This is also the spam filter: nothing reaches the live site
 unvetted.
 
 ## Lifecycle
 
 ```
-  Hosted form  ──▶  responses sheet  ──▶  data/submissions-pending.json  ──▶  weekly run
+  Hosted form  ──▶  responses sheet  ──▶  data/submissions-pending.json  ──▶  daily run
    (Tally)          (export/paste)            (pending queue)               verifies & merges
                                                                                  │
                                                               ┌──────────────────┴───────────────┐
@@ -24,7 +24,7 @@ these fields (keep it short; friction kills submissions):
 | Field                | Type            | Required | Notes                                        |
 |----------------------|-----------------|----------|----------------------------------------------|
 | Event name           | short text      | ✅       |                                              |
-| Link / source        | URL             | ✅       | The post or page where they saw it. Critical: no link means we can't verify. |
+| Link / source        | URL             | No       | The official page, a post, or a photo of the poster, if there is one. Helps us add it faster. |
 | City                 | short text      | ✅       | Or "Online / hybrid"                         |
 | Dates (if known)     | short text      | No       | Free text; we confirm against the source     |
 | Organizer            | short text      | No       |                                              |
@@ -51,7 +51,7 @@ Each run, export new form responses and add them to the `pending` array in
 }
 ```
 
-The weekly run (`RESEARCH.md`, Step 1) reads these, verifies each, then merges or rejects.
+The daily run (`RESEARCH.md`, Step 1) reads these, verifies each, then merges or rejects.
 After the run, **clear processed items** from the queue so it doesn't reprocess them.
 
 ## Alternative: GitHub issue form
